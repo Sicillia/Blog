@@ -91,7 +91,7 @@ require 'connection.php';
   ?>
   <br><br>
 
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table border="0" cellpadding="10" cellspacing="20">
     <tr>
     <th>Number</th>
     <th>Generic Name of Medicine</th>

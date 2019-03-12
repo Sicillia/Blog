@@ -15,7 +15,7 @@
  <div class="row">
   <div class="col-md-6 col-md-offset-3">
 
- 	Login <br><br>
+ 	Login >_<<br><br>
  	<form method="POST" action="actionlogin.php">
  		username	: 
 		<input type="text" name="username" placeholder="username">

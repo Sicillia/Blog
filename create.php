@@ -7,7 +7,8 @@ session_start();
  ?>
 <!DOCTYPE html>
 <html>
-<head>
+<center>
+	<head>
 	<title>Add New Post</title>
 </head>
 <body>
@@ -24,4 +25,5 @@ session_start();
 		<input type="submit" name="submit">
  	</form>
 </body>
+</center>
 </html>

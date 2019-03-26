@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
+          <a class="navbar-brand" href="#">You're My Medicine</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -121,6 +121,9 @@ require 'connection.php';
       </div>
       </div>
     </div>
+     <form>
+     <a href="index.php">Back to Home </a></button>
+     </form>
           </div>
         </div>
       </div>

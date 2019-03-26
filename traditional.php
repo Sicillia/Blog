@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Medicine List</title>
+    <title>Traditional</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">You're My Medicine</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -59,13 +59,12 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li ><a href="medicine.php">Medicine</a></li>
-            <li class="active"><a href="list.php">List</a></li>
+            <li class="active"><a href="medicine.php">Medicine</a></li>
+            <li ><a href="list.php">List</a></li>
           </ul>
 
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Medicine List</h1>
     <?php 
 require 'connection.php';
   $view = query ("SELECT * FROM blog");
@@ -74,55 +73,57 @@ require 'connection.php';
 <!DOCTYPE html>
 <html>
 <body>
-<center>
-  <br><br>
-
-  <form action="index.php" method="get">
-    <label>Search :</label>
-    <input type="text" name="cari">
-    <input type="submit" value="Cari">
-  </form>
- 
-  <?php 
-  if(isset($_GET['cari'])){
-    $cari = $_GET['cari'];
-    echo "<b>Search Result : ".$cari."</b>";
-  }
-  ?>
-   <form>
+  <br>
+  <center>
+    <h3>Traditional Medicine</h3>
+     <form>
      <a href="index.php">Back to Home </a></button>
      </form>
-  <br><br>
+  <br>
+  <body>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
-    <table border="0" cellpadding="10" cellspacing="20">
-    <tr>
-    <th>Number</th>
-    <th>Generic Name of Medicine</th>
-    <th>Disease(s) Used for</th>
-    <th>Last Updated</th>
-    </tr> 
-
-<?php $i=1; ?>
-<?php foreach ($view as $x ) : //foreach itu pengulangan pada array  ?> 
-  <tr>
-    <td><?= $i; ?></td>
-    <td><?= $x["medicine"]; ?></td>
-    <td><?= $x["disease"];  ?></td>
-    <td><?= $x["time"];  ?></td>
-  </tr>
-<?php $i++; ?>
-<?php endforeach; ?>
-</table>
-<br><br>
-</center>
-  </body>
-</html>
-
-  
-          </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      <div class="item active">
+        <img style="max-height: 200px;" src="picture/6.jpg" alt="...">
+        <div class="carousel-caption">
         </div>
       </div>
-    </div>
+      <div class="item">
+        <img style="max-height: 200px;" src="picture/2.jpg" alt="...">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img style="max-height: 200px;" src="picture/7.jpg" alt="...">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      </div>
+       <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+      </div>
+       <body>
+  <h4>Traditional medicine is the ancient and culture–bound medical practice which existed before the application of modern science to health. The practice of traditional medicine varies widely, in keeping with the societal and cultural heritage of different countries. Every human community has responded to the challenge of maintaining health and treating diseases by developing a medical system. Thus, traditional medicine has been practised to some degree in all cultures.
+  </h4>
+  </body>
+  </div>
+  </body>
+  <br><br>
+
+ 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -130,5 +131,6 @@ require 'connection.php';
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
+  </center>
   </body>
 </html>

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Blog</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">You're My Medicine</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -59,7 +59,7 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="medicine.php">Medicine</a></li>
+            <li ><a href="medicine.php">Medicine</a></li>
             <li ><a href="list.php">List</a></li>
           </ul>
 
@@ -74,14 +74,50 @@ require 'connection.php';
 <!DOCTYPE html>
 <html>
 <body>
-<center>
   <br>
+  <center>
     <h2>Welcome to My Blog</h2>
     <h3>Do You Want to Learn a Little Bit about Medicine?</h3>
   <br><br>
+  <div class="cols">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img style="max-height: 200px;" src="picture/2.jpg" alt="...">
+      <div class="caption">
+        <h3>Traditional Medicine</h3>
+        <p><a href="traditional.php" class="btn btn-primary" role="button">More Information</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="cols">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img style="max-height: 200px;" src="picture/3.jpg" alt="...">
+      <div class="caption">
+        <h3>2 Kind Of Medicine</h3>
+        <p>Traditional Medicene and Herbal Medicine</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="cols">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img style="max-height: 200px;" src="picture/1.jpg" alt="...">
+      <div class="caption">
+        <h3>Modern Medicine</h3>
+        <p><a href="modern.php" class="btn btn-primary" role="button">More Information</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <body>
   <form>
-  <a href="login.php">You're the Admin of This Blog? </a></button>
+  <h4><a href="login.php">You're the Admin of This Blog? </a></button></h4>
   </form>
+  </body>
   <br><br>
 
     <!-- Bootstrap core JavaScript
@@ -90,5 +126,6 @@ require 'connection.php';
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
+  </center>
   </body>
 </html>
